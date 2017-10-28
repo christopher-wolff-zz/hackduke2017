@@ -1,8 +1,9 @@
 <resources>
     <string name="app_name">Identify</string>
-    <string name="identify">Welcome to Identify</string>
+    <string name="identify">Welcome to <b>Identify</b></string>
     <string name="second_page">Press Your Item</string>
     <string name="action_settings">Settings</string>
     <string name="impimg">Import Image</string>
+    <string name="camera">Camera</string>
     <string name="browse">Broswe</string>
 </resources>
