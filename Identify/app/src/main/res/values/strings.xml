@@ -3,4 +3,6 @@
     <string name="identify">Welcome to Identify</string>
     <string name="second_page">Press Your Item</string>
     <string name="action_settings">Settings</string>
+    <string name="impimg">Import Image</string>
+    <string name="browse">Broswe</string>
 </resources>
