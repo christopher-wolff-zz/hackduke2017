@@ -1,7 +1,10 @@
+/*
 package hackduke2017.identify;
+*/
 /**
  * @author Jose Davis Nidhin
- */
+ *//*
+
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -176,4 +179,6 @@ public class CamTestActivity extends Activity {
         }
 
     }
+
 }
+*/

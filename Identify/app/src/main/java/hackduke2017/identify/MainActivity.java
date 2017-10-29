@@ -32,7 +32,6 @@ public class MainActivity extends AppCompatActivity {
         startCamera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 goToThirdActivity();
             }
         });
@@ -42,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     private void goToThirdActivity(){
+        /*
         Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
+        */
     }
 }

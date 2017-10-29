@@ -1,4 +1,3 @@
-package hackduke2017.identify;
 //
 // Copyright (c) Microsoft. All rights reserved.
 // Licensed under the MIT license.
@@ -6,7 +5,7 @@ package hackduke2017.identify;
 // Microsoft Cognitive Services (formerly Project Oxford): https://www.microsoft.com/cognitive-services
 //
 // Microsoft Cognitive Services (formerly Project Oxford) GitHub:
-// https://github.com/Microsoft/Cognitive-Vision-Android
+// https://github.com/Microsoft/Cognitive-Emotion-Android
 //
 // Copyright (c) Microsoft Corporation
 // All rights reserved.
@@ -31,23 +30,20 @@ package hackduke2017.identify;
 // OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
+package com.microsoft.projectoxford.emotionsample.helper;
 
+import android.content.ContentResolver;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.graphics.Rect;
+import android.media.ExifInterface;
+import android.net.Uri;
+import android.provider.MediaStore;
 
-        import android.content.ContentResolver;
-        import android.database.Cursor;
-        import android.graphics.Bitmap;
-        import android.graphics.BitmapFactory;
-        import android.graphics.Canvas;
-        import android.graphics.Color;
-        import android.graphics.Matrix;
-        import android.graphics.Paint;
-        import android.graphics.Rect;
-        import android.media.ExifInterface;
-        import android.net.Uri;
-        import android.provider.MediaStore;
-
-        import java.io.IOException;
-        import java.io.InputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * Defined several functions to load, draw, save, resize, and rotate images.
