@@ -14,11 +14,11 @@ import org.jsoup.nodes.Document;
 
 public class JSoupTest{
     public static void main(String[] args) throws IOException{
-        System.out.print(wikiThis("Genuflexion"));
+        System.out.print(wikiThis("Tax"));
     }
 
     public static String wikiThis(String item) throws IOException{
-        String url ="https://en.wikipedia.org/wiki/"+ item;
+        String url ="https://simple.wikipedia.org/wiki/"+ item;
         Document doc = Jsoup.connect(url).get();
         Elements paragraphs= doc.select("p");
         StringBuilder textBlock=new StringBuilder();
