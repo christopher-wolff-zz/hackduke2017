@@ -18,18 +18,17 @@ public class ThirdActivity extends Activity {
         setContentView(R.layout.activity_third);
 
         imageView = (ImageView) this.findViewById(R.id.imageView1);
-        Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(cameraIntent, CAMERA_REQUEST);
- /*       Button photoButton = (Button) this.findViewById(R.id.button1);
+        //Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
+        //startActivityForResult(cameraIntent, CAMERA_REQUEST);
+        Button photoButton = (Button) this.findViewById(R.id.button1);
 
         photoButton.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 Intent cameraIntent = new Intent(android.provider.MediaStore.ACTION_IMAGE_CAPTURE);
                 startActivityForResult(cameraIntent, CAMERA_REQUEST);
             }
-        });*/
+        });
     }
 
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -38,8 +37,6 @@ public class ThirdActivity extends Activity {
             imageView.setImageBitmap(photo);
         }
     }
-
-
 
 }
 
