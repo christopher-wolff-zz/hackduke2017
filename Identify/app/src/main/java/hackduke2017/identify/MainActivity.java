@@ -8,8 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
+    private static int IMG_RESULT = 1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,16 +20,29 @@ public class MainActivity extends AppCompatActivity {
         TextView tx = (TextView)findViewById(R.id.textView);
         Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/beyond_the_mountains.ttf");
         tx.setTypeface(custom_font);
-        Button start = (Button) findViewById(R.id.button);
-        start.setOnClickListener(new View.OnClickListener() {
+        Button startImport = (Button) findViewById(R.id.importButton);
+        startImport.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 goToSecondActivity();
+            }
+        });
+        Button startCamera = (Button) findViewById(R.id.cameraButton);
+        startCamera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                goToThirdActivity();
             }
         });
     }
     private void goToSecondActivity(){
         Intent intent = new Intent(this, SecondActivity.class);
+        startActivity(intent);
+    }
+    private void goToThirdActivity(){
+        Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
     }
 }
