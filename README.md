@@ -1,4 +1,4 @@
-# HackDuke2017
+# hack-duke-2017
 Android app that helps children with autism read emotions
 
 Status: Incomplete
