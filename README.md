@@ -1,4 +1,4 @@
 # Identify
-Android app that helps children with autism read emotions
+Android emotion recognition quiz app targeted towards children with autism
 
 Status: Incomplete
